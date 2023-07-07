@@ -1,0 +1,56 @@
+.view {
+  border: none;
+  margin-left: 30px;
+
+  &__title {
+    margin-top: 10px;
+    font-family: UniSansCaps;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #333333;
+    text-align: center;
+  }
+
+  &__title span {
+    font-size: 30px;
+    color: #dadada;
+  }
+
+  &__img {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  &__img img {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 300px;
+  }
+
+  &__tab {
+    font-size: 28px;
+    line-height: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #72c9d4;
+    padding: 20px 30px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    padding: 0 15px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #666666;
+    @media (min-width: $md-3 + px) {
+      font-size: 16px;
+    }
+  }
+
+}

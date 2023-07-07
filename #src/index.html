@@ -1,0 +1,32 @@
+<!doctype html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="en">
+<!-- Заголовок страницы, контейнер для других важных данных -->
+<head>
+    @@include('pages-blocks/head-block.html')
+    <!-- Заголовок страницы в браузере -->
+    <title>Главная</title>
+</head>
+<!-- Отображаемое тело страницы -->
+<body class="body" id="body">
+<!-- wrapper -->
+<div class="wrapper">
+    <!-- header -->
+    @@include('pages-blocks/header.html')
+    <!-- main -->
+    <main class="main">
+        <div class="main__body _container">
+
+            <!-- article -->
+            @@include('pages-blocks/article.html')
+
+            <!-- good -->
+            @@include('pages-blocks/content.html')
+
+        </div>
+    </main>
+    <!-- footer -->
+    @@include('pages-blocks/footer.html')
+</div>
+<!-- scripts -->
+@@include('pages-blocks/scripts.html')

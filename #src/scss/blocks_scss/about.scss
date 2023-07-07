@@ -1,0 +1,28 @@
+.about {
+  display: block;
+  @media (min-width: $md-3 + px) {
+    width: 76%;
+    padding-left: 30px;
+  }
+
+  &__img {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__img img {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  &__text {
+    margin-top: 20px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 900;
+  }
+
+}

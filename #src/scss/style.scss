@@ -1,0 +1,84 @@
+// RESET
+@import "blocks_scss/reset";
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/* VARS */
+$mainMaxWidth: 1140;
+$widthBurger: 992;
+
+$md-0: 426;
+$md-1: 576;
+$md-2: 769;
+$md-3: 993;
+$md-4: 1025;
+$md-5: 1200;
+$md-6: 1441;
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/* MIXINS */
+@import "blocks_scss/mixin's";
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+body {
+  font-family: 'Roboto', 'Play', sans-serif;
+  background-color: #ffffff;
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+.main {
+  display: flex;
+  margin-top: 90px;
+  margin-bottom: 20px;
+  @media (min-width: $md-3 + px) {
+    margin-top: 50px;
+  }
+
+  &__body {
+    width: 100%;
+    padding: 0;
+    @media (min-width: $md-3 + px) {
+      padding: 0 15px;
+      display: flex;
+    }
+  }
+
+}
+
+/* _CONTAINER */
+._container {
+  max-width: $mainMaxWidth + px;
+  margin: 0 auto;
+
+  @media (min-width: $md-3 + px) {
+    padding: 0 15px;
+  }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/* FONTS */
+@import "fonts";
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/* BLOCKS OF INDIVIDUAL ELEMENTS */
+// ibg
+@import "blocks_scss/blocks/ibg";
+// ruble
+@import "blocks_scss/blocks/ruble";
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/* MAINS-BLOCKS */
+// header
+@import "blocks_scss/header";
+// left
+@import "blocks_scss/article";
+// content
+@import "blocks_scss/content";
+// goods
+@import "blocks_scss/goods";
+// about
+@import "blocks_scss/about";
+// footer
+@import "blocks_scss/footer";
+// viewGood.scss
+@import "blocks_scss/viewGood.scss";

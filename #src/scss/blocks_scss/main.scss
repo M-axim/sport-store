@@ -1,0 +1,544 @@
+////////* intro */////////
+.intro {
+  background-color: #f6f2f2;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  &__body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  &__wrapper {
+    padding-top: 80px;
+    @media (min-width: $md-3 + px) {
+      position: relative;
+      padding-top: 30px;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    text-align: center;
+    font-family: Raleway;
+    font-weight: 300;
+    @include adaptiv-link(48, 25, #fff, 75px, 35px, uppercase);
+    @media (min-width: $md-4 + px) {
+      max-width: 500px;
+      text-align: left;
+    }
+  }
+
+  &__text-span {
+    font-weight: 700;
+  }
+}
+
+////////* /intro *////////
+
+////////* intro__cards */////////
+.intro__cards {
+  height: auto;
+  @include adaptiv-Side(margin-top, 50, 25);
+
+  @media (min-width: $md-6 + px) {
+    margin-top: 150px;
+  }
+
+  .cards {
+
+    &__row {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      @media (min-width: $md-2 + px) {
+        margin: 0 -15px;
+      }
+    }
+
+    &__col_3 {
+      @media (min-width: $md-2 + px) {
+        padding: 0 15px;
+      }
+    }
+
+    &__item {
+      @include adaptiv-Side(padding, 50, 25, 25, 15);
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      height: 100%;
+    }
+
+    &__img {
+      margin-bottom: 30px;
+      @include adaptiv-Side(margin-bottom, 30, 15)
+    }
+
+    &__title {
+      font-weight: 700;
+      @include adaptiv-link(30, 15, #666666, 34px, 24px, capitalize);
+      @include adaptiv-Side(margin-bottom, 30, 15);
+      @media (min-width: $md-3 + px) {
+        padding: 0 15px;
+      }
+    }
+
+    &__text {
+      font-weight: 500;
+      @include adaptiv-link(18, 14, #878787, 30px, 24px);
+      flex: 1 1 auto;
+      @include adaptiv-Side(margin-bottom, 50, 25);
+    }
+
+  }
+
+}
+
+////////* /intro__cards *////////
+
+////////* intro__bottom */////////
+.intro__bottom {
+  @include adaptiv-Side(margin-top, 50, 25);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $md-5 + px) {
+    margin-top: 110px;
+  }
+
+  .cards {
+
+    &__row {
+      flex-direction: column-reverse;
+      text-align: center;
+      align-self: center;
+      @media (min-width: $md-3 + px) {
+        flex-direction: row;
+        margin: 0 -30px;
+        flex-wrap: nowrap;
+        text-align: left;
+        align-self: flex-start;
+      }
+    }
+
+    &__row_reverse {
+      @media (min-width: $md-3 + px) {
+        flex-direction: row-reverse;
+      }
+    }
+
+    &__col_2 {
+      justify-content: center;
+      @media (min-width: $md-3 + px) {
+        padding: 0 30px;
+      }
+    }
+
+    &__col_2:last-child {
+      @media (min-width: $md-3 + px) {
+        padding: 0 0 0 30px;
+      }
+    }
+
+    &__title,
+    &__text {
+      font-weight: 500;
+      @media (min-width: $md-3 + px) {
+        text-align: left;
+      }
+    }
+
+    &__title {
+      letter-spacing: 0.025em;
+      @include adaptiv-link(50, 25, #0169b4, 45px, 24px);
+      @include adaptiv-Side(margin-bottom, 30, 15);
+    }
+
+    &__text {
+      @include adaptiv-link(18, 16, #666666, 30px, 24px);
+      @include adaptiv-Side(margin-bottom, 50, 15);
+    }
+
+    &__img img {
+      max-width: 100%;
+    }
+
+  }
+
+}
+
+////////* /intro__bottom *////////
+
+////////* intro-cards */////////
+.project-cards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+  &__row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__col {
+    width: 100%;
+    display: flex;
+    @include adaptiv-Side(margin-bottom, 30, 15);
+    padding: 0 15px;
+    justify-content: center;
+
+    @media (min-width: $md-2 + px) {
+      width: 50%;
+      flex: 0 1 50%;
+    }
+    @media (min-width: $md-3 + px) {
+      flex: 0 1 33.333%;
+      width: 33.333%;
+      padding: 0;
+      justify-content: flex-start;
+    }
+
+    @media (min-width: $md-5 + px) {
+      flex: 0 1 25%;
+      width: 25%;
+    }
+
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease 0s;
+  }
+
+  &__img:hover {
+    @media (min-width: $md-3 + px) {
+      transform: scale(1.1);
+    }
+  }
+
+  &__img img {
+    max-width: 100%;
+    display: block;
+  }
+
+}
+
+////////* /intro-cards *////////
+
+////////* solution__cards */////////
+.solution__cards {
+  @include adaptiv-Side(margin-top, 50, 0);
+
+  .cards {
+
+    &__row {
+      @media (min-width: $md-5 + px) {
+        margin: 0 -40px;
+      }
+    }
+
+    &__col_2 {
+      flex-direction: column;
+      margin-bottom: 0;
+      @media (min-width: $md-3 + px) {
+        @include adaptiv-Side(margin-bottom, 30, 15);
+      }
+      @media (min-width: $md-5 + px) {
+        padding: 0 40px;
+      }
+    }
+
+    &__item {
+      background-color: transparent;
+      margin-bottom: 15px;
+      @media (min-width: $md-3 + px) {
+        @include adaptiv-Side(margin-bottom, 50, 15);
+      }
+    }
+
+    &__title,
+    &__text {
+      @media (min-width: $md-3 + px) {
+        text-align: left;
+      }
+    }
+
+    &__title {
+      font-family: Raleway;
+      font-weight: 500;
+      @include adaptiv-link(30, 25, #333333, 26px, 24px, capitalize);
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      @include adaptiv-link(18, 14, #878787, 32px, 24px);
+    }
+
+  }
+
+}
+
+////////* /solution__cards *////////
+
+////////* blog */////////
+.blog {
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+  @media (min-width: $md-3 + px) {
+    flex-direction: row;
+  }
+
+  &__content {
+    flex: 0 0 100%;
+    display: flex;
+  }
+
+  &__container {
+    width: 100%;
+    max-width: $mainMaxWidth + px;
+    margin: 0 auto;
+    padding: 0 15px;
+    align-items: center;
+  }
+
+  &__body {
+    @include adaptiv-Side(padding, 90, 25, 0, 0);
+    text-align: center;
+
+    @media (min-width: $md-3 + px) {
+      width: 50%;
+      text-align: right;
+    }
+
+  }
+
+  &__title,
+  &__text,
+  &__author {
+    font-family: Raleway;
+    font-weight: 500;
+  }
+
+  &__text,
+  &__author {
+    margin-left: 30px;
+    @media (min-width: $md-3 + px) {
+      margin-left: 50px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    letter-spacing: 0.025em;
+    @include adaptiv-link(50, 25, #0066cc, 65px, 24px);
+    @include adaptiv-Side(padding-bottom, 100, 25);
+    @media (min-width: $md-3 + px) {
+      text-align: left;
+    }
+  }
+
+  &__message {
+    position: relative;
+    @include adaptiv-Side(margin-bottom, 50, 40);
+    text-align: left;
+  }
+
+  &__message:before,
+  &__message:after {
+    content: "“";
+    font-family: timesnewromanps-boldmt;
+    font-weight: 400;
+    @include adaptiv-link(80, 50, #ccc, 50px, 24px);
+  }
+
+  &__message:before {
+    @include position(absolute, top, -8px, left, 0);
+  }
+
+  &__message:after {
+    @include position(absolute, bottom, -8px, right, 0);
+    transform: rotate(180deg);
+
+    @media (min-width: $md-3 + px) {
+      display: none;
+    }
+
+  }
+
+  &__text {
+    @include adaptiv-link(18, 14, #878787, 32px, 24px);
+    position: relative;
+    text-align: center;
+    @media (min-width: $md-3 + px) {
+      width: 100%;
+      max-width: 510px;
+      text-align: left;
+    }
+  }
+
+  &__author {
+    font-weight: 600;
+    @include adaptiv-link(18, 16, #333, 25px, 24px,);
+    @include adaptiv-Side(padding-top, 40, 15);
+  }
+
+  &__img {
+    @media (min-width: $md-3 + px) {
+      flex: 0 0 43%;
+      position: relative;
+      transform: translate(-100%, 0);
+    }
+  }
+
+  &__img img {
+    width: 100%;
+    max-width: 100%;
+
+    @media (min-width: $md-3 + px) {
+      @include position(absolute, top, 0, left, 0);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+  }
+
+}
+
+////////* /blog *////////
+
+////////* news */////////
+.news {
+
+  &__body {
+
+  }
+
+  .cards-news {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    @media (min-width: $md-3 + px) {
+      justify-content: flex-start;
+    }
+    @include adaptiv-Side(margin-bottom, 30, 15);
+
+    &__row {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+
+      @media (min-width: $md-2 + px) {
+        margin: 0 -10px;
+      }
+      @media (min-width: $md-3 + px) {
+        margin: 0 -20px;
+      }
+
+    }
+
+    &__col {
+      width: 100%;
+      height: auto;
+      text-align: center;
+      display: flex;
+      @include adaptiv-Side(margin-bottom, 30, 15);
+
+      @media (min-width: $md-2 + px) {
+        width: 50%;
+        flex: 0 1 50%;
+      }
+      @media (min-width: $md-3 + px) {
+        flex: 0 1 33.333%;
+        width: 33.333%;
+        height: 100%;
+        text-align: left;
+      }
+
+    }
+
+    &__wrapper {
+      width: 100%;
+
+      @media (min-width: $md-2 + px) {
+        padding: 0 10px;
+      }
+      @media (min-width: $md-3 + px) {
+        padding: 0 20px;
+      }
+
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      font-family: Raleway;
+    }
+
+    &__top {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 20px;
+      @media (min-width: $md-3 + px) {
+        margin: 0 -15px;
+        flex-direction: row;
+        @include adaptiv-Side(margin-bottom, 60, 25);
+      }
+    }
+
+    &__date,
+    &__title {
+      @media (min-width: $md-3 + px) {
+        padding: 0 15px;
+      }
+    }
+
+    &__date {
+      margin-bottom: 10px;
+      @media (min-width: $md-3 + px) {
+        margin: 0;
+      }
+    }
+
+    &__number {
+      font-weight: 500;
+      @include adaptiv-link(60, 35, #ccc, 60px, 40px, uppercase);
+    }
+
+    &__month {
+      display: block;
+      @include adaptiv-link(25, 21, #cccccc, 31px, 24px, uppercase);
+    }
+
+    &__title {
+      font-weight: 600;
+      letter-spacing: 0.015em;
+      @include adaptiv-link(24, 16, #333333, 36px, 24px);
+    }
+
+    &__text {
+      margin-bottom: 30px;
+      font-weight: 500;
+      @include adaptiv-link(18, 16, #878787, 30px, 24px);
+      @include adaptiv-Side(margin-bottom, 60, 25);
+    }
+
+  }
+
+}
+
+////////* /news *////////
+
+
+
